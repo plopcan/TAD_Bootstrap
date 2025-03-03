@@ -13,188 +13,186 @@
   <body>
       <header>
         <h1>AlfCos</h1>
-        <nav>
-            <button>Socios</button>
-            <button>Usuarios</button>
-            <button>Talleres</button>
-            <button>Eventos</button>
-        </nav>
+        <button>Socios <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+          <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+        </svg></button>
+        <button>Talleres <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+          <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0m7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+        </svg></button>
+        <button>Eventos <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-balloon" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 9.984C10.403 9.506 12 7.48 12 5a4 4 0 0 0-8 0c0 2.48 1.597 4.506 4 4.984M13 5c0 2.837-1.789 5.227-4.52 5.901l.244.487a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.244-.487C4.789 10.227 3 7.837 3 5a5 5 0 0 1 10 0m-6.938-.495a2 2 0 0 1 1.443-1.443C7.773 2.994 8 2.776 8 2.5s-.226-.504-.498-.459a3 3 0 0 0-2.46 2.461c-.046.272.182.498.458.498s.494-.227.562-.495"/>
+        </svg></button>
+        <button>Otros <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+          <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+        </svg></button>
+      </nav>
       </header>
-       <div class="row flex-nowrap">
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <span class="fs-5 d-none d-sm-inline">Menu</span>
-                </a>
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
-                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
-                    </li>
-                    <li>
-                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
-                        <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
-                    </li>
-                </ul>
-                <hr>
-                <div class="dropdown pb-4">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-                        <span class="d-none d-sm-inline mx-1">loser</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col py-3">
       <main>
-        
-   
+   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.65ymas.com/uploads/s1/90/06/3/bigstock-191483635.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://s1.ppllstatics.com/diariosur/www/multimedia/202006/03/media/cortadas/pescaito-frito-1-kyEB-U110396499466YB-1248x770@Diario%20Sur.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.65ymas.com/uploads/s1/90/06/3/bigstock-191483635.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+                  <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                      <li><a class="dropdown-item" href="#">New project...</a></li>
+                      <li><a class="dropdown-item" href="#">Settings</a></li>
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
         <h2>Bienvenido</h2>
         <h3>¿Quienes Somos?</h3>
-        
-        <p>Alfonso del Cosio es una asociacion sin animo de lucro para jubilados y pensionistas. 
-        <br>A continuacion podras leer informacion de los distintos aspectos de la informacion</p> 
-        <h3>Socios</h3>
-        <h3>Talleres</h3>
-        <p>En esta seccion podras ver los talleres que se ofrecen en 
-            la asociacion actualmente</p>
 
-            <div class="card mb-3 adapted" >
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="https://www.65ymas.com/uploads/s1/90/06/3/bigstock-191483635.jpeg" class="img-fluid rounded-start" alt="Costura">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Costura</h5>
-                    <p class="card-text">Taller de costura para principiantes</p>
-                    <p class="card-text">Horario: 10:00-12:00</p>
-                    <p class="card-text">Dias: Lunes, Miercoles, Viernes</p>
-                    <p class="card-text"><small class="text-muted">Plazas disponibles 6</small></p>
-                  </div>
-                </div>
+        <p class="lead">Alfonso del Cosio es una asociacion sin animo de lucro para jubilados y pensionistas.
+          <br>A continuacion podras leer informacion de los distintos aspectos de la informacion
+        </p>
+        <h3>Socios</h3>
+        <p>Los socios tienen accesp a todos los eventos y talleres que ofrecemos. Por 12€ al 
+          año puede apuntarse y recibir las ultimas novedades de la asociacion.<br>
+          Para poder apuntarse puede hacerlo desde esta pagina o desde la oficina, llevando
+          su DNI
+        </p>
+        <h3>Talleres</h3>
+        <p>En esta seccion podras ver los talleres que se ofrecen en
+          la asociacion actualmente</p>
+
+        <div class="card mb-3 adapted">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://www.65ymas.com/uploads/s1/90/06/3/bigstock-191483635.jpeg"
+                class="img-fluid rounded-start" alt="Costura">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Costura</h5>
+                <p class="card-text">Taller de costura para principiantes</p>
+                <p class="card-text">Horario: 10:00-12:00</p>
+                <p class="card-text">Dias: Lunes, Miercoles, Viernes</p>
+                <p class="card-text"><small class="text-muted">Plazas disponibles 6</small></p>
+                <button type="button" class="btn btn-primary">Apuntarse</button>
               </div>
             </div>
-            <div class="card mb-3 adapted" >
-              <div class="d-flex flex-column flex-md-row">
-                <div class="col-md-4 order-md-last">
-                  <img src="https://i.pinimg.com/736x/38/48/1f/38481f8e143f1d140cfcd154a91c16a5.jpg" class="img-fluid rounded-start w-100" alt="Costura">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Carey</h5>
-                    <p class="card-text">Clase de carey para principiantes</p>
-                    <p class="card-text">Horario: 17:00-19:00</p>
-                    <p class="card-text">Dias: Martes, Jueves/p>
-                    <p class="card-text"><small class="text-muted">Plazas disponibles 3</small></p>
-                  </div>
-                </div>
+          </div>
+        </div>
+        <div class="card mb-3 adapted">
+          <div class="d-flex flex-column flex-md-row">
+            <div class="col-md-4 order-md-last">
+              <img src="https://i.pinimg.com/736x/38/48/1f/38481f8e143f1d140cfcd154a91c16a5.jpg"
+                class="img-fluid rounded-start w-100" alt="Costura">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Carey</h5>
+                <p class="card-text">Clase de carey para principiantes</p>
+                <p class="card-text">Horario: 17:00-19:00</p>
+                <p class="card-text">Dias: Martes, Jueves</p>
+                <p class="card-text"><small class="text-muted">Plazas disponibles 3</small></p>
+                <button type="button" class="btn btn-primary">Apuntarse</button>
               </div>
             </div>
- 
-            <div class="card mb-3 adapted" >
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="https://assets.simpleviewinc.com/sv-andalucia/image/upload/c_limit,h_1200,q_75,w_1200/v1/cms_resources/clients/andalucia/Sevilla_a1c8505d-446b-4309-872a-3001b5879c17.jpg"
-                   class="img-fluid rounded-start" alt="Sevilla">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Conocer Sevilla</h5>
-                    <p class="card-text">Taller para conocer los lugares mas importantes de nuestra ciudad</p>
-                    <p class="card-text">Horario: 10:00-11:00</p>
-                    <p class="card-text">Dias: Lunes, Miercoles, Viernes</p>
-                    <p class="card-text"><small class="text-muted">Plazas disponibles 0</small></p>
-                  </div>
-                </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 adapted">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://assets.simpleviewinc.com/sv-andalucia/image/upload/c_limit,h_1200,q_75,w_1200/v1/cms_resources/clients/andalucia/Sevilla_a1c8505d-446b-4309-872a-3001b5879c17.jpg"
+                class="img-fluid rounded-start" alt="Sevilla">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Conocer Sevilla</h5>
+                <p class="card-text">Taller para conocer los lugares mas importantes de nuestra ciudad</p>
+                <p class="card-text">Horario: 10:00-11:00</p>
+                <p class="card-text">Dias: Lunes, Miercoles, Viernes</p>
+                <p class="card-text"><small class="text-muted">Plazas disponibles 0</small></p>
+                <button type="button" class="btn btn-primary">Apuntarse</button>
               </div>
             </div>
-        
+          </div>
+        </div>
+
+        <div class="card mb-3 adapted">
+          <div class="d-flex flex-column flex-md-row">
+            <div class="col-md-4 order-md-last">
+              <img src="https://i.pinimg.com/736x/38/48/1f/38481f8e143f1d140cfcd154a91c16a5.jpg"
+                class="img-fluid rounded-start w-100" alt="Costura">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Uso de ordenadores</h5>
+                <p class="card-text">Clase de carey para principiantes</p>
+                <p class="card-text">Horario: 17:00-19:00</p>
+                <p class="card-text">Dias: Martes, Jueves</p>
+                <p class="card-text"><small class="text-muted">Plazas disponibles 3</small></p>
+                <button type="button" class="btn btn-primary">Apuntarse</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <h3>Eventos</h3>
-        <div class="card adapted" style="width: 18rem;">
-          <img class="card-img-top" src="https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/andalucia/malaga-52886652-istock.jpg"
-           alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Viaje a Malaga</h5>
-            <p class="card-text">Viaje a la ciudad de Malaga. Se visitaran los monumentos mas importantes acompañados
-              por un guia local. Se incluye comida en un restaurante local</p>
-            <p class="card-text">Fecha: 6 de Marzo a las 11:00 al 8 de Marzo a las 11:00</p>
-            <p class="card-text">Precio: 5€</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+
+            <div class="card tam">
+              <img class="card-img-top"
+                src="https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/andalucia/malaga-52886652-istock.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Viaje a Malaga</h5>
+                <p class="card-text">Viaje a la ciudad de Malaga. Se visitaran los monumentos mas importantes
+                  acompañados
+                  por un guia local. Se incluye comida en un restaurante local</p>
+                <p class="card-text">Fecha: 6 de Marzo a las 11:00 al 8 de Marzo a las 11:00</p>
+                <p class="card-text">Precio: 5€</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card adapted" style="width: 18rem;">
-          <img class="card-img-top" src="https://s1.ppllstatics.com/diariosur/www/multimedia/202006/03/media/cortadas/pescaito-frito-1-kyEB-U110396499466YB-1248x770@Diario%20Sur.jpg"
-           alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Pescaito</h5>
-            <p class="card-text">Celebracion del inicio de la feria.</p>
-            <p class="card-text">Fecha: 6 de Marzo a las 11:00 al 8 de Marzo a las 11:00</p>
-            <p class="card-text">Precio: 5€</p>
-            <a href="#" class="btn btn-primary">Apuntarse</a>
+          <div class="col">
+            <div class="card tam">
+              <img class="card-img-top"
+                src="https://s1.ppllstatics.com/diariosur/www/multimedia/202006/03/media/cortadas/pescaito-frito-1-kyEB-U110396499466YB-1248x770@Diario%20Sur.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Pescaito</h5>
+                <p class="card-text">Celebracion del inicio de la feria.</p>
+                <p class="card-text">Fecha: 6 de Marzo a las 11:00 al 8 de Marzo a las 11:00</p>
+                <p class="card-text">Precio: 5€</p>
+                <a href="#" class="btn btn-primary">Apuntarse</a>
+              </div>
+            </div>
           </div>
+
         </div>
-      </main>
-        </div>
-    </div>
       <footer>
-        <p></p>
         <button type="button" class="btn btn-danger">Logout</button>
       </footer>
     </div>
