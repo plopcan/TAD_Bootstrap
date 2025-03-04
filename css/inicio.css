@@ -21,8 +21,6 @@ body {
 }
 
 .container-fluid {
-    min-height: 100vh !important;
-    min-width: 100vh !important;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -35,42 +33,45 @@ header, footer {
     background-color: var(--notMain-bg-color);
     color: white;
     padding: 1em;
-    width: 100%;
 }
 
 header {
-    button {
+    a {
         background-color: var(--notMain-bg-color);
-        color: white;
-        padding: 0.5em 1em;
+        color: white !important;
         border: none;
-        border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px;
         cursor: pointer;
+        width: 10em;
+        height: 3em;
     }
-    button:hover {
-        background-color: var(--notMainButton-bg-color);
+    a:hover {
+        background-color: var(--notMainButton-bg-color) !important;
     }
-    .actual {
-        background-color: var(--main-bg-color);
-        color: black;
+    nav{
+        background-color: var(--notMain-bg-color) !important;
     }
-    .actual:hover {
-        background-color: var(--notMainButton-bg-color);
-        color: white;
+    
+    .carousel{
+        max-height: 20em;
+        max-width: 30em;
+        margin: 0 auto;
     }
 }
 
 footer {
     padding: 1em;
     margin-top: auto;
+    width: 100%;
 }
 
 main {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
-    padding: 1em;
     flex: 1;
     width: 100%;
+    padding: 4em;
+    
 }
 
 .action-button {
@@ -90,20 +91,25 @@ main {
     border: 1px solid var( --notMainButton-bg-color);
     display: flex;
     flex-direction: column;
-        max-width: 60em !important;
+    max-width: 60em !important;
+    img{
+        min-height: 20em;
+    }
 }
 
-.sidebar {
+
+.tam{
+    max-width: 25em;
+    display: inline-block;
+    background-color: var( --zigzag-bg-color);
+    border: 1px solid var( --notMainButton-bg-color);
+}
+
+#container{
+    display: flex;
     position: fixed;
     top: 0;
     right: 0;
-    height: 100%;
-    width: 250px;
-    background-color: var(--notMain-bg-color);
-    padding-top: 20px;
-  }
-  .sidebar a {
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-  }
+    width: 100%;
+    z-index: 1000;
+}
