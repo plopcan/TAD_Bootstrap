@@ -28,3 +28,8 @@ function showAlertRed() {
             </button>
         </div>`;
 }
+
+function cerrarSesion() {
+    let modal = new bootstrap.Modal(document.getElementById('logoutModal'));
+    modal.show();
+}

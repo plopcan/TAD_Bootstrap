@@ -242,7 +242,33 @@
         </div>
         </main>
       <footer>
-        <button type="button" class="btn btn-danger">Logout</button>
+        <div class="list-group lista ">
+          <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+            Mas Informacion
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">Socios</a>
+          <a href="#" class="list-group-item list-group-item-action">Talleres</a>
+          <a href="#" class="list-group-item list-group-item-action">Eventos</a>
+        </div>
+        <button type="button" class="btn btn-danger" onclick="cerrarSesion()">Logout</button>
+        
+        <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="logoutModalLabel">Cerrar Sesion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>¿Esta seguro que quiere cerrar sesion?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Si</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   </body>

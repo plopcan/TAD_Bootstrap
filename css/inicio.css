@@ -31,7 +31,6 @@ body {
 
 header, footer {
     background-color: var(--notMain-bg-color);
-    color: white;
     padding: 1em;
 }
 
@@ -69,6 +68,23 @@ footer {
     padding: 1em;
     margin-top: auto;
     width: 100%;
+
+    .lista{
+        background-color: var(--notMain-bg-color);
+        margin: 1em;
+        a {
+            background-color: var(--notMain-bg-color);
+            color: white !important;
+            border: none;
+            border-radius: 5px 5px;
+            cursor: pointer;
+            width: 10em;
+            height: 3em;
+        }
+        a:hover {
+            background-color: var(--notMainButton-bg-color) !important;
+        }
+    }
 }
 
 main {
