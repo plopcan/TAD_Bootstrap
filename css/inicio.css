@@ -101,9 +101,9 @@ main {
     border: 1px solid var( --notMainButton-bg-color);
     display: flex;
     flex-direction: column;
-    max-width: 60em !important;
+    max-width: 70em !important;
     img{
-        min-height: 20em;
+        min-height: 25em;
     }
 }
 
@@ -136,4 +136,12 @@ main {
 }
 .full{
     width: 100%;
+}
+
+.contorno{
+    text-shadow:
+    1px 0 0 black,    /* Desplaza a la derecha */
+    -1px 0 0 black,   /* Desplaza a la izquierda */
+    0 1px 0 black,    /* Desplaza abajo */
+    0 -1px 0 black;
 }
