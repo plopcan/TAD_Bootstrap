@@ -1,13 +1,24 @@
 function showAlert() {
     let container = document.getElementById("container");
-    container.innerHTML =
-        `<div class="alert alert-success 
-            alert-dismissible fade show" role="alert">
-            <p class = "lead">Su plaza ha sido guardada correctamente</p>
-            <button type="button" class="btn-close" 
-                data-bs-dismiss="alert" aria-label="Close">
-            </button>
-        </div>`;
+    let alertDiv = document.createElement("div");
+    alertDiv.className = "alert alert-success alert-dismissible fade show";
+    alertDiv.role = "alert";
+
+    let alertText = document.createElement("p");
+    alertText.className = "lead";
+    alertText.textContent = "Su plaza ha sido guardada correctamente";
+
+    let closeButton = document.createElement("button");
+    closeButton.type = "button";
+    closeButton.className = "btn-close";
+    closeButton.setAttribute("data-bs-dismiss", "alert");
+    closeButton.setAttribute("aria-label", "Close");
+
+    alertDiv.appendChild(alertText);
+    alertDiv.appendChild(closeButton);
+
+    container.innerHTML = "";
+    container.appendChild(alertDiv);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -17,16 +28,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-function showAlertRed() {
+function showAlertComplete() {
     let container = document.getElementById("container");
-    container.innerHTML =
-        `<div class="alert alert-warning 
-            alert-dismissible fade show" role="alert">
-            <p class = "lead">Lo sentimos, no hay plazas libres actualmente</p>
-            <button type="button" class="btn-close" 
-                data-bs-dismiss="alert" aria-label="Close">
-            </button>
-        </div>`;
+    let alertDiv = document.createElement("div");
+    alertDiv.className = "alert alert-warning alert-dismissible fade show";
+    alertDiv.role = "alert";
+
+    let alertText = document.createElement("p");
+    alertText.className = "lead";
+    alertText.textContent = "Lo sentimos, no hay plazas libres actualmente";
+
+    let closeButton = document.createElement("button");
+    closeButton.type = "button";
+    closeButton.className = "btn-close";
+    closeButton.setAttribute("data-bs-dismiss", "alert");
+    closeButton.setAttribute("aria-label", "Close");
+
+    alertDiv.appendChild(alertText);
+    alertDiv.appendChild(closeButton);
+
+    container.innerHTML = "";
+    container.appendChild(alertDiv);
 }
 
 function cerrarSesion() {
